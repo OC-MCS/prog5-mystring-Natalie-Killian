@@ -52,9 +52,9 @@ int main()
 	cout << "s3 = s4 = s1 (assigns from right to left)\n";
 	s3 = s4 = s1;
 	cout << "After assignment: \n";
-	cout << "s1:" << s1 << endl;
-	cout << "s3:" << s3 << endl;
-	cout << "s4:" << s4 << endl;
+	cout << "s1 :" << s1 << endl;
+	cout << "s3 :" << s3 << endl;
+	cout << "s4 :" << s4 << endl;
 
 	// test overloaded == operator
 	cout << "These strings are equal.\n";
@@ -91,7 +91,7 @@ int main()
 	// test if MyString can be set equal to itself
 	s1 = s1;
 	cout << "Assigning " << s1 << " to " << s1 << endl;
-	cout << "After assignment: ";
+	cout << "After assignment: \n";
 	cout << "s1: " << s1 << endl;
 
 	// test if MyString constructor gets called automatically
@@ -117,7 +117,7 @@ void passMyString(MyString s)
 // function to test if a MyString can be returned
 MyString returnMyString()
 {
-	MyString funcString("I was created in a function!");
+	MyString funcString("I was created in a function!\n");
 
 	return funcString;
 }

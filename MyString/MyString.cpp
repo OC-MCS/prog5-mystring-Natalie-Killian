@@ -108,7 +108,7 @@ const char * MyString::c_str()
 // NOT a member of MyString
 ostream &operator<<(ostream&str, MyString&other)
 {
-	str << other.c_str() << endl;
+	str << other.c_str();
 
 	return str;
 }
