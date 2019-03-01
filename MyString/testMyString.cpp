@@ -98,14 +98,11 @@ int main()
 	cout << s5;
 
 	// test literal c-string operations
-	MyString tester = "Welcome" + " Spring!";
-	cout << tester;
-
-
+	/*MyString tester = "Welcome" + " Spring!";
+	cout << tester;*/
 
 	return 0;
 }
-
 
 // function to test if a MyString can be passed as parameter
 void passMyString(MyString s)
