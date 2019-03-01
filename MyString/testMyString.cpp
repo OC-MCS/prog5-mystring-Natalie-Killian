@@ -1,4 +1,4 @@
-//=====================================================
+//================                                                                                                                                                 =====================================
 // Natalie Killian
 // March 1st, 2019
 // Programming Assignment #5
@@ -48,13 +48,13 @@ int main()
 	cout << "Generating new sentence with updated s2...\n";
 	cout << sentence2 << endl;
 	// test 2
-	/*MyString s10, s11;
-	cout << "Assigning s1 (" << s1 << ") to s10 and s11.\n";
-	s1 = s10 = s11;
+	cout << "Assigning s1 (" << s1 << ") to s3 (" << s3 << ") and s4 (" << s4 << ").\n";
+	cout << "s3 = s4 = s1 (assigns from right to left)\n";
+	s3 = s4 = s1;
 	cout << "After assignment: \n";
-	cout << "s1 is:" << s1 << endl;
-	cout << "s10 is:" << s10 << endl;
-	cout << "s11 is:" << s11 << endl;*/
+	cout << "s1:" << s1 << endl;
+	cout << "s3:" << s3 << endl;
+	cout << "s4:" << s4 << endl;
 
 	// test overloaded == operator
 	cout << "These strings are equal.\n";
@@ -91,15 +91,17 @@ int main()
 	// test if MyString can be set equal to itself
 	s1 = s1;
 	cout << "Assigning " << s1 << " to " << s1 << endl;
-	cout << "s1 still is " << s1 << endl;
+	cout << "After assignment: ";
+	cout << "s1: " << s1 << endl;
 
 	// test if MyString constructor gets called automatically
 	MyString s5 = "March is here!\n";
-	cout << s5;
+	cout << s5 << endl;
 
 	// test literal c-string operations
-	/*MyString tester = "Welcome" + " Spring!";
-	cout << tester;*/
+	char tester[] = "Welcome Spring!!!\n";
+	MyString s6(tester);
+	cout << s6 << endl;
 
 	return 0;
 }
